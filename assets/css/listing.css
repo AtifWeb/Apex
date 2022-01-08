@@ -1,0 +1,99 @@
+main {
+  background: #1a1a1a;
+  height: 240px;
+}
+main .container_custom .presentation {
+  height: 240px;
+}
+main .container_custom .presentation h1 {
+  color: #e1be8f;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 1rem;
+}
+main .container_custom .presentation p {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+}
+.search_area {
+  background: transparent;
+}
+.filter_area {
+  justify-content: center;
+  margin-top: 2rem;
+}
+.feature_lists {
+  padding-top: 0px !important;
+}
+.cards_wrapper ul {
+  padding-left: 0px !important;
+}
+.pagination {
+  justify-content: center !important;
+  margin-top: 4rem !important;
+}
+.pagination > * + * {
+  margin-left: 0.6rem;
+}
+.page-link {
+  background: #646464 !important;
+  height: 50px !important;
+  width: 50px !important;
+  border: none !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  color: #fff !important;
+  border-radius: 0px !important;
+}
+.page-link.active {
+  background: #e1be8f !important;
+}
+@media screen and (max-width: 1200px) {
+  .search_area .dropdown button {
+    background-color: #081c44 !important;
+  }
+}
+@media screen and (max-width: 950px) {
+  .feature_lists .cards_wrapper .row {
+    flex-wrap: wrap;
+  }
+  .feature_lists .cards_wrapper .row > * {
+    padding-right: 0px;
+  }
+}
+@media screen and (max-width: 770px) {
+  main .container_custom .presentation,
+  main {
+    height: 100%;
+  }
+  main .container_custom .presentation {
+    padding: 2rem 0rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main .container_custom {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .our_client {
+    display: none;
+  }
+  main .container_custom .presentation .box h1,
+  .about_us > .row .presentation_about h1,
+  .feature_lists .container_custom > h1,
+  .our_client .top_area > h1,
+  .get_in_touch .content_area .heading_area h1,
+  .popular_area .presentation h1 {
+    font-size: 25px;
+  }
+  .get_in_touch {
+    padding-top: 0rem !important;
+    padding-bottom: 5rem !important;
+  }
+  .our_client .top_area > h1 {
+    text-align: center;
+  }
+}
