@@ -19,6 +19,9 @@ ul,
 nav {
   list-style: none;
 }
+aside {
+  display: none;
+}
 .burger_img {
   display: none;
 }
@@ -325,7 +328,30 @@ footer a {
   .collapse:not(.show) {
     display: block !important;
   }
-  .navbar-nav > *:not(:last-child) {
+  nav .navbar-nav > *:not(:last-child) {
+    display: none;
+  }
+  aside {
+    background-color: #000;
+    padding: 1rem 2rem;
+    position: absolute;
+    top: -550px;
+    left: 0;
+    z-index: 9;
+    width: 100%;
+    transition: 0.3s ease all;
+  }
+  aside.active {
+    top: 80px;
+  }
+  aside .navbar-nav a {
+    color: #fff;
+  }
+  aside .navbar-nav > * + * {
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+  aside .navbar-nav > *:last-child {
     display: none;
   }
 }
