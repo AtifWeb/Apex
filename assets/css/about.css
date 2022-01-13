@@ -1,0 +1,173 @@
+main {
+  padding: 3rem 0rem;
+  height: 100%;
+  background: #1a1a1a;
+}
+main h1 {
+  font-size: 12px;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+main h2 {
+  font-size: 36px;
+  font-family: "Playfair Display", serif;
+  color: #e1be8f;
+  margin-bottom: 0px;
+}
+.about_description {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  position: relative;
+}
+.about_description > img:not(.gril) {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  height: 100%;
+  width: 40vw;
+  object-fit: cover;
+}
+.about_description > .gril {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 100%;
+}
+.about_description .presentation {
+  width: 50%;
+}
+.about_description .presentation p {
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  text-align: justify;
+}
+.property_banner img {
+  width: 100%;
+  transform: translateY(150px);
+}
+.our_team_section {
+  background-color: #1a1a1a;
+  padding: 3rem 0rem;
+  padding-top: 15rem;
+}
+.our_team_section .main_heading {
+  font-size: 60px;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+  color: #e1be8f;
+  position: relative;
+  width: 90%;
+  padding-bottom: 1rem;
+}
+.our_team_section .main_heading::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  width: 50px;
+  background-color: #ffffff;
+  height: 5px;
+}
+
+.our_team_section .card_custom {
+  display: flex;
+  align-items: center;
+}
+.our_team_section .card_custom .presentation {
+  padding-left: 10px;
+}
+.our_team_section .card_custom .presentation * {
+  margin: 0px;
+}
+.our_team_section .card_custom .presentation h1 {
+  color: #c2a06f;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+}
+.our_team_section .card_custom .presentation p {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+}
+.our_team_section .card_custom .presentation button {
+  background: #c2a06f;
+  display: flex;
+  font-size: 12px;
+  color: #fff;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+  align-items: center;
+  width: 182px;
+  justify-content: space-between;
+  height: 40px;
+}
+@media screen and (max-width: 1200px) {
+  main .container_custom {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 860px) {
+  .our_team_section .card_custom .presentation button {
+    width: 160px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .about_description {
+    padding-bottom: 0px;
+    padding-top: 2rem;
+  }
+  .about_description > img:not(.gril) {
+    display: none;
+  }
+
+  .about_description .presentation {
+    width: 100%;
+  }
+  .our_team_section {
+    padding-top: 3rem;
+  }
+  .property_banner {
+    padding: 4rem 0rem;
+  }
+  .property_banner img {
+    transform: translateY(0px);
+  }
+}
+@media screen and (max-width: 500px) {
+  main h2 {
+    font-size: 30px;
+  }
+  .our_team_section .main_heading {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 420px) {
+  main h2 {
+    font-size: 25px;
+  }
+  .our_team_section .main_heading {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .our_team_section .row > * {
+    padding-right: 0px;
+  }
+  .our_team_section .card_custom {
+    display: flex;
+    flex-direction: column;
+  }
+  .our_team_section .card_custom > img {
+    width: 100%;
+  }
+  .our_team_section .card_custom .presentation {
+    padding: 1rem 0px;
+    width: 100%;
+  }
+}

@@ -1,0 +1,88 @@
+main {
+  height: 417px;
+  background-image: url(../img/blog_single_banner.png);
+  background-position: center;
+  display: flex;
+
+  align-items: center;
+  background-size: cover;
+}
+main .container_custom {
+  width: 70%;
+}
+main .box_area {
+  background-color: #000;
+  width: 486px;
+  color: #fff;
+  padding: 2rem 2rem;
+}
+main .box_area h1 {
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  color: #e1be8f;
+}
+main .box_area h2 {
+  font-size: 36px;
+
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+}
+main .box_area p {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+.special_bg_area {
+  background: #fff;
+}
+
+.blank {
+  background: #000;
+}
+.content_area {
+  padding: 5rem 0rem;
+  position: relative;
+}
+.content_area > img {
+  position: absolute;
+  width: 60px;
+  top: 0;
+  left: 0;
+}
+.content_area .container_custom img {
+  width: 100%;
+  object-fit: cover;
+}
+.content_area .container_custom {
+  width: 70%;
+}
+.social_links_area {
+  display: flex;
+  align-items: center;
+  padding: 0px;
+}
+
+.social_links_area > * + * {
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 700px) {
+  main .container_custom,
+  .content_area .container_custom {
+    width: 90%;
+  }
+  main .box_area {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  main .box_area h2 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 420px) {
+  main .box_area h2 {
+    font-size: 25px;
+  }
+}
